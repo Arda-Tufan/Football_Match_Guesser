@@ -3,7 +3,7 @@ This python script uses an algorithm based on probability calculation to predict
 
 # BEFORE YOU START;
 
-Some of the numbers here will be decimal where it shouldn't be. For example average goal expected to be scored by team X will be something like 1.57. But, just like nobody has 2.4 children, nobody scores 1.57 goals — this is only an expected value. It's the average number of goals expected to be scored by team X if the match were played again and again, heaven forbid. So this not an ACTUAL value, it is an expected one!
+Some of the numbers here will be decimal where it seems like it shouldn't be. For example average goal expected to be scored by team X will be something like 1.57. But, just like nobody has 2.4 children, nobody scores 1.57 goals — this is only an expected value. It's the average number of goals expected to be scored by team X if the match were played again and again, heaven forbid. So this not an ACTUAL value, it is an expected one!
 
 # How does this work?
 
