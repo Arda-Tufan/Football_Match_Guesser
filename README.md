@@ -1,5 +1,5 @@
 # Football_Match_Guesser
-This python script uses an algorithm based on probability calculation to predict the outcome of a match with a high probability of being correct. WARNING! THIS SCENARIO CANNOT PREDICT 100% CONSISTENTLY! PLEASE DO NOT BET LARGE AMOUNTS OF MONEY ON MATCHES RELYING ON THIS BOT! Please further read if you want more explanation and have a good prediction :)
+This python script uses an algorithm based on probability calculation to predict the outcome of a match with a high probability of being correct. WARNING! THIS SCENARIO CANNOT PREDICT 100% CONSISTENTLY! THE BOT USES THE DATA IN THE PREVIOUS SEASON SO IT MAY NOT BE 100% VALID FOR THIS SEASON! PLEASE DO NOT BET LARGE AMOUNTS OF MONEY ON MATCHES RELYING ON THIS BOT! Please further read if you want more explanation and have a good prediction :) 
 
 # BEFORE YOU START;
 
@@ -7,11 +7,11 @@ Some of the numbers here will be decimal where it seems like it shouldn't be. Fo
 
 # How does this work?
 
-This bot works with calculating 2 aspects of a team. Their attack power and defence weakness. Also, şt looks to the  average goals scored for an home and an away team in a specific league.
+This bot works with calculating 2 aspects of a team. Their attack power and defence weakness. Also, it looks to the average goals scored for an home and an away team in a specific league.
 
 # Calculating the average number of goals scored for a team in a specific league.
 
-Up first, we have to calculate average goals scored for a team in a whole season. To do this, we need to add all of the scored or conceded goals in any league. This could be any league like Süperlig, LaLiga, Premier League etc. Once you added up all of the total goal scored or conceded in any league, you have to divide it by the total number of teams there are in the league. The number that you have right now is the average goal scored in a  season for a team. (The number you can have can be something like 43,25 so please round the number you have!)
+Up first, we have to calculate average goals scored for a team in a whole season. To do this, we need to add all of the scored or conceded goals in any league. This could be any league like Süperlig, LaLiga, Premier League etc. Once you added up all of the total goal scored or conceded in any league, you have to divide it by the total number of teams there are in the league. The number that you have right now is the average goal scored in a season for a team. (The number you can have can be something like 43,25 so please round the number you have!)
 
 # Calculating the attack power of a team
 
@@ -39,7 +39,42 @@ Average goals scored by any away team. If the numbers confuse you because they a
 
 # Calculate a match's outcome
 
-# TO BE CONTINUED
+To calculate match's outcome, we have to first find number of goals a team is expected to score. For example lets calculate the outcome of Fenerbahçe-Beşiktaş match. Lets also say that fenerbahçe is the home team. The formula for this calculation is;
+
+(Fenerbahçe's attack power) * (average home team score per match) * (Beşiktaş's defence weakness)
+
+The outcome of this calculation would give us something like 1.77. However there is no such thing as 1.77 goals so we have to round the expected value and we can say that probably, fenerbahçe would score 2 goals if they were the home team. For beşiktaş, the calculation follows like this:
+
+
+(Beşiktaş's attack power) * (average away team score per match) * (Fenerbahçe's defence weakness)
+
+
+This would leave us with 1.17 and when we round it, beşiktaş will probably score 1 goals in a match with fenerbahçe when they are the away team. So we can say that a Fenerbahçe-Beşiktaş match will en up in a score of 2-1 if Fenerbahçe is the home team. If Beşiktaş was the home team, their chances of scoring a goal would increase slightly. So hopefully, you now understood how this bot uses this algorithm to calculate an outcome of an match. Up next, if you are not interested in Süperlig teams, you can add your'e own teams in the .INI file yourself! This is how;
+
+
+# Adding your'e own team
+
+
+First, open the .INI file and look at thye format. It follows like this;
+
+
+[TEAM NAME THAT YOU WANT TO ADD IN ALL CAPS]
+
+your'e_teams_attack_power_variable = your'e team's attack power
+
+your'e_teams_defence_weakness_variable = your'e team's defence weakness
+
+(OPTIONAL) your'e_teams_scored_goals_for_a_whole_season_variable = your'e_teams_scored_goals_for a_whole_season
+
+(OPTIONAL) your'e_teams_conceded_goals_for_a_whole_season_variable = your'e_teams_scored_conceded_for a_whole_season
+
+
+After you done this, you are all good to go. DON'T FORGET TO CALCULATE THE TEAM'S DATA ACCORDING TO THEIR OWN LEAGUE! ALSO, AVERAGE GOAL SCORED FOR AN HOME TEAM OR AVERAGE GOALS SCORED FOR AN AWAY TEAM DATAS ARE ALL CALCULATED ACCORDING TO SUPERLIG, SO THE CALCULATION MAY NOT BE ACCURATE!
+
+
+Made by @Mapperland
+
+
 
 
 
