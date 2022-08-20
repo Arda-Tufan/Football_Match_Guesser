@@ -57,7 +57,7 @@ This would leave us with 1.17 and when we round it, beşiktaş will probably sco
 
 First, open the .INI file and look at thye format. It follows like this;
 
-
+---------------------
 [TEAM NAME THAT YOU WANT TO ADD IN ALL CAPS]
 
 your'e_teams_attack_power_variable = your'e team's attack power
@@ -68,11 +68,11 @@ your'e_teams_defence_weakness_variable = your'e team's defence weakness
 
 (OPTIONAL) your'e_teams_conceded_goals_for_a_whole_season_variable = your'e_teams_scored_conceded_for a_whole_season
 
-
+---------------------
 After you done this, you are all good to go. DON'T FORGET TO CALCULATE THE TEAM'S DATA ACCORDING TO THEIR OWN LEAGUE! ALSO, AVERAGE GOAL SCORED FOR AN HOME TEAM OR AVERAGE GOALS SCORED FOR AN AWAY TEAM DATAS ARE ALL CALCULATED ACCORDING TO SUPERLIG, SO THE CALCULATION MAY NOT BE ACCURATE!
 
 
-Made by @Mapperland
+Made by @Mors_Atra
 
 
 
